@@ -1,0 +1,250 @@
+{
+  "model_name": "Real Incident Multi-Label Classifier",
+  "source_is_synthetic": false,
+  "validation_status": "real_data_internal_chronological_holdout",
+  "split": {
+    "train": 4624,
+    "validation": 1073,
+    "test": 1186,
+    "strategy": "strict chronological 70/15/15 with boundary campaigns excluded"
+  },
+  "primary_labels": [
+    "PHISHING",
+    "RANSOMWARE",
+    "MALWARE",
+    "ACCOUNT_TAKEOVER",
+    "WEB_EXPLOITATION",
+    "SOCIAL_ENGINEERING",
+    "PRIVILEGE_MISUSE",
+    "DATA_BREACH"
+  ],
+  "experimental_labels": [
+    "BOTNET_C2",
+    "DOS_DDOS",
+    "BRUTE_FORCE",
+    "PORT_SCAN",
+    "SQL_INJECTION",
+    "XSS"
+  ],
+  "thresholds": {
+    "PHISHING": 0.3700000000000001,
+    "RANSOMWARE": 0.25,
+    "MALWARE": 0.3600000000000001,
+    "ACCOUNT_TAKEOVER": 0.27,
+    "WEB_EXPLOITATION": 0.20000000000000004,
+    "SOCIAL_ENGINEERING": 0.32000000000000006,
+    "PRIVILEGE_MISUSE": 0.45000000000000007,
+    "DATA_BREACH": 0.5400000000000001,
+    "BOTNET_C2": 0.7,
+    "DOS_DDOS": 0.7,
+    "BRUTE_FORCE": 0.7,
+    "PORT_SCAN": 0.7,
+    "SQL_INJECTION": 0.7,
+    "XSS": 0.7
+  },
+  "primary_test_metrics": {
+    "records": 1186,
+    "micro_precision": 0.7467105263157895,
+    "micro_recall": 0.7841105354058722,
+    "micro_f1": 0.7649536647009267,
+    "macro_f1": 0.6186493131260604,
+    "samples_f1": 0.784295973840662,
+    "samples_jaccard": 0.6948546534971494,
+    "exact_match_accuracy": 0.39291736930860033,
+    "hamming_loss": 0.11762225969645869,
+    "mean_average_precision": 0.6830072811741168,
+    "per_label": [
+      {
+        "label": "PHISHING",
+        "precision": 0.4153846153846154,
+        "recall": 0.5294117647058824,
+        "f1": 0.46551724137931033,
+        "support": 51,
+        "predicted": 65
+      },
+      {
+        "label": "RANSOMWARE",
+        "precision": 0.9541284403669725,
+        "recall": 0.7482014388489209,
+        "f1": 0.8387096774193549,
+        "support": 278,
+        "predicted": 218
+      },
+      {
+        "label": "MALWARE",
+        "precision": 0.7819548872180451,
+        "recall": 0.6956521739130435,
+        "f1": 0.736283185840708,
+        "support": 299,
+        "predicted": 266
+      },
+      {
+        "label": "ACCOUNT_TAKEOVER",
+        "precision": 0.725,
+        "recall": 0.19078947368421054,
+        "f1": 0.3020833333333333,
+        "support": 152,
+        "predicted": 40
+      },
+      {
+        "label": "WEB_EXPLOITATION",
+        "precision": 0.4394213381555154,
+        "recall": 0.7915309446254072,
+        "f1": 0.5651162790697675,
+        "support": 307,
+        "predicted": 553
+      },
+      {
+        "label": "SOCIAL_ENGINEERING",
+        "precision": 0.3360655737704918,
+        "recall": 0.4659090909090909,
+        "f1": 0.3904761904761905,
+        "support": 88,
+        "predicted": 122
+      },
+      {
+        "label": "PRIVILEGE_MISUSE",
+        "precision": 0.7029702970297029,
+        "recall": 0.7244897959183674,
+        "f1": 0.7135678391959799,
+        "support": 98,
+        "predicted": 101
+      },
+      {
+        "label": "DATA_BREACH",
+        "precision": 0.9268978444236177,
+        "recall": 0.9482262703739214,
+        "f1": 0.9374407582938389,
+        "support": 1043,
+        "predicted": 1067
+      }
+    ]
+  },
+  "all_label_test_metrics": {
+    "records": 1186,
+    "micro_precision": 0.7468146321413892,
+    "micro_recall": 0.7718776550552251,
+    "micro_f1": 0.7591393357008565,
+    "macro_f1": 0.3739220564801978,
+    "samples_f1": 0.7803293015771937,
+    "samples_jaccard": 0.6895748012527102,
+    "exact_match_accuracy": 0.3844856661045531,
+    "hamming_loss": 0.06944109853047459,
+    "mean_average_precision": 0.41922905119793175,
+    "per_label": [
+      {
+        "label": "PHISHING",
+        "precision": 0.4153846153846154,
+        "recall": 0.5294117647058824,
+        "f1": 0.46551724137931033,
+        "support": 51,
+        "predicted": 65
+      },
+      {
+        "label": "RANSOMWARE",
+        "precision": 0.9541284403669725,
+        "recall": 0.7482014388489209,
+        "f1": 0.8387096774193549,
+        "support": 278,
+        "predicted": 218
+      },
+      {
+        "label": "MALWARE",
+        "precision": 0.7819548872180451,
+        "recall": 0.6956521739130435,
+        "f1": 0.736283185840708,
+        "support": 299,
+        "predicted": 266
+      },
+      {
+        "label": "ACCOUNT_TAKEOVER",
+        "precision": 0.725,
+        "recall": 0.19078947368421054,
+        "f1": 0.3020833333333333,
+        "support": 152,
+        "predicted": 40
+      },
+      {
+        "label": "WEB_EXPLOITATION",
+        "precision": 0.4394213381555154,
+        "recall": 0.7915309446254072,
+        "f1": 0.5651162790697675,
+        "support": 307,
+        "predicted": 553
+      },
+      {
+        "label": "SOCIAL_ENGINEERING",
+        "precision": 0.3360655737704918,
+        "recall": 0.4659090909090909,
+        "f1": 0.3904761904761905,
+        "support": 88,
+        "predicted": 122
+      },
+      {
+        "label": "PRIVILEGE_MISUSE",
+        "precision": 0.7029702970297029,
+        "recall": 0.7244897959183674,
+        "f1": 0.7135678391959799,
+        "support": 98,
+        "predicted": 101
+      },
+      {
+        "label": "DATA_BREACH",
+        "precision": 0.9268978444236177,
+        "recall": 0.9482262703739214,
+        "f1": 0.9374407582938389,
+        "support": 1043,
+        "predicted": 1067
+      },
+      {
+        "label": "BOTNET_C2",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 13,
+        "predicted": 0
+      },
+      {
+        "label": "DOS_DDOS",
+        "precision": 1.0,
+        "recall": 0.16666666666666666,
+        "f1": 0.2857142857142857,
+        "support": 6,
+        "predicted": 1
+      },
+      {
+        "label": "BRUTE_FORCE",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 12,
+        "predicted": 0
+      },
+      {
+        "label": "PORT_SCAN",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2,
+        "predicted": 0
+      },
+      {
+        "label": "SQL_INJECTION",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 4,
+        "predicted": 0
+      },
+      {
+        "label": "XSS",
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 1,
+        "predicted": 0
+      }
+    ]
+  },
+  "scientific_note": "Real-data internal chronological holdout. Independent external validation and genuine benign operational data are still required."
+}

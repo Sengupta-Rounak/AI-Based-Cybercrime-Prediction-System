@@ -1,0 +1,37 @@
+{
+  "name": "Real Incident Multi-Label Classifier",
+  "task": "Multi-label classification of confirmed cyber incident narratives",
+  "algorithm": "TF-IDF word/character features + one-vs-rest SGD logistic regression + validation calibration",
+  "features": 24000,
+  "primary_labels": [
+    "PHISHING",
+    "RANSOMWARE",
+    "MALWARE",
+    "ACCOUNT_TAKEOVER",
+    "WEB_EXPLOITATION",
+    "SOCIAL_ENGINEERING",
+    "PRIVILEGE_MISUSE",
+    "DATA_BREACH"
+  ],
+  "experimental_labels": [
+    "BOTNET_C2",
+    "DOS_DDOS",
+    "BRUTE_FORCE",
+    "PORT_SCAN",
+    "SQL_INJECTION",
+    "XSS"
+  ],
+  "training_source": "Verified real-world incident narratives",
+  "training_records": 4624,
+  "validation_records": 1073,
+  "test_records": 1186,
+  "internal_test_micro_f1_primary": 0.7649536647009267,
+  "internal_test_macro_f1_primary": 0.6186493131260604,
+  "external_validation": false,
+  "limitations": [
+    "The training corpus contains confirmed incident narratives rather than genuine benign operational records.",
+    "Performance is an internal chronological holdout result, not independent external validation.",
+    "Rare labels have limited evidence and are conservatively thresholded.",
+    "Model evidence is not proof of causation."
+  ]
+}

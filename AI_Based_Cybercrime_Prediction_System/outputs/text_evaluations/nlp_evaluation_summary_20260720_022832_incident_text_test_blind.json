@@ -1,0 +1,2050 @@
+{
+  "records": 280,
+  "correct": 149,
+  "accuracy": 0.53214286,
+  "balanced_accuracy": 0.53214286,
+  "macro_precision": 0.45289957,
+  "macro_recall": 0.53214286,
+  "macro_f1": 0.47951379,
+  "weighted_precision": 0.45289957,
+  "weighted_recall": 0.53214286,
+  "weighted_f1": 0.47951379,
+  "micro_precision": 0.53214286,
+  "micro_recall": 0.53214286,
+  "micro_f1": 0.53214286,
+  "cohen_kappa": 0.50698925,
+  "top3_accuracy": 0.56785714,
+  "log_loss": 15.02705088,
+  "multiclass_brier": 0.03828621,
+  "expected_calibration_error": 0.42984648,
+  "review_count": 7,
+  "review_rate": 0.025,
+  "coverage": 0.975,
+  "selective_accuracy": 0.54578755,
+  "average_confidence": 0.96198934,
+  "average_correct_confidence": 0.9947708,
+  "average_error_confidence": 0.92470355,
+  "labels": [
+    "ACCOUNT_TAKEOVER",
+    "BENIGN",
+    "BOTNET",
+    "BRUTE_FORCE",
+    "DDOS",
+    "IDENTITY_THEFT",
+    "MALWARE",
+    "PHISHING",
+    "PORT_SCAN",
+    "RANSOMWARE",
+    "SQL_INJECTION",
+    "XSS",
+    "BOTNET_C2",
+    "DATA_BREACH",
+    "DOS_DDOS",
+    "PRIVILEGE_MISUSE",
+    "SOCIAL_ENGINEERING",
+    "WEB_EXPLOITATION"
+  ],
+  "per_class": [
+    {
+      "label": "ACCOUNT_TAKEOVER",
+      "precision": 0.88888889,
+      "recall": 0.8,
+      "f1": 0.84210526,
+      "support": 20,
+      "predicted_count": 18,
+      "true_positive": 16,
+      "false_positive": 2,
+      "false_negative": 4,
+      "supported_by_model": true
+    },
+    {
+      "label": "BENIGN",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0,
+      "predicted_count": 7,
+      "true_positive": 0,
+      "false_positive": 7,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "BOTNET",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0,
+      "predicted_count": 20,
+      "true_positive": 0,
+      "false_positive": 20,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "BRUTE_FORCE",
+      "precision": 0.58823529,
+      "recall": 1.0,
+      "f1": 0.74074074,
+      "support": 20,
+      "predicted_count": 34,
+      "true_positive": 20,
+      "false_positive": 14,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "DDOS",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0,
+      "predicted_count": 27,
+      "true_positive": 0,
+      "false_positive": 27,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "IDENTITY_THEFT",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 0,
+      "predicted_count": 26,
+      "true_positive": 0,
+      "false_positive": 26,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "MALWARE",
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.85714286,
+      "support": 20,
+      "predicted_count": 15,
+      "true_positive": 15,
+      "false_positive": 0,
+      "false_negative": 5,
+      "supported_by_model": true
+    },
+    {
+      "label": "PHISHING",
+      "precision": 0.81818182,
+      "recall": 0.9,
+      "f1": 0.85714286,
+      "support": 20,
+      "predicted_count": 22,
+      "true_positive": 18,
+      "false_positive": 4,
+      "false_negative": 2,
+      "supported_by_model": true
+    },
+    {
+      "label": "PORT_SCAN",
+      "precision": 0.90909091,
+      "recall": 1.0,
+      "f1": 0.95238095,
+      "support": 20,
+      "predicted_count": 22,
+      "true_positive": 20,
+      "false_positive": 2,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "RANSOMWARE",
+      "precision": 0.71428571,
+      "recall": 1.0,
+      "f1": 0.83333333,
+      "support": 20,
+      "predicted_count": 28,
+      "true_positive": 20,
+      "false_positive": 8,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "SQL_INJECTION",
+      "precision": 0.51282051,
+      "recall": 1.0,
+      "f1": 0.6779661,
+      "support": 20,
+      "predicted_count": 39,
+      "true_positive": 20,
+      "false_positive": 19,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "XSS",
+      "precision": 0.90909091,
+      "recall": 1.0,
+      "f1": 0.95238095,
+      "support": 20,
+      "predicted_count": 22,
+      "true_positive": 20,
+      "false_positive": 2,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "BOTNET_C2",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "predicted_count": 0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 20,
+      "supported_by_model": false
+    },
+    {
+      "label": "DATA_BREACH",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "predicted_count": 0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 20,
+      "supported_by_model": false
+    },
+    {
+      "label": "DOS_DDOS",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "predicted_count": 0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 20,
+      "supported_by_model": false
+    },
+    {
+      "label": "PRIVILEGE_MISUSE",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "predicted_count": 0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 20,
+      "supported_by_model": false
+    },
+    {
+      "label": "SOCIAL_ENGINEERING",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "predicted_count": 0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 20,
+      "supported_by_model": false
+    },
+    {
+      "label": "WEB_EXPLOITATION",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 20,
+      "predicted_count": 0,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 20,
+      "supported_by_model": false
+    }
+  ],
+  "confusion_matrix": [
+    [
+      16,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      18,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      0,
+      0,
+      18,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      0,
+      8,
+      0,
+      0,
+      2,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      7,
+      0,
+      6,
+      0,
+      0,
+      0,
+      4,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      11,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "calibration_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "count": 2,
+      "average_confidence": 0.38654912,
+      "accuracy": 0.0,
+      "gap": 0.38654912
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 3,
+      "average_confidence": 0.44582714,
+      "accuracy": 0.0,
+      "gap": 0.44582714
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "count": 3,
+      "average_confidence": 0.50814246,
+      "accuracy": 0.0,
+      "gap": 0.50814246
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "count": 7,
+      "average_confidence": 0.645017,
+      "accuracy": 0.14285714,
+      "gap": 0.50215985
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "count": 6,
+      "average_confidence": 0.75084011,
+      "accuracy": 0.16666667,
+      "gap": 0.58417344
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 9,
+      "average_confidence": 0.84997737,
+      "accuracy": 0.0,
+      "gap": 0.84997737
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 250,
+      "average_confidence": 0.99620821,
+      "accuracy": 0.588,
+      "gap": 0.40820821
+    }
+  ],
+  "errors": [
+    {
+      "record_id": "NLP-0187",
+      "incident_text": "The public service received an extreme surge of requests from distributed sources and became unavailable to legitimate users. The source had not previously been associated with normal activity.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0190",
+      "incident_text": "Inbound traffic exceeded normal capacity and exhausted the web gateway's connection resources.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BENIGN",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "NLP-0189",
+      "incident_text": "The public service received an extreme surge of requests from distributed sources and became unavailable to legitimate users. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0179",
+      "incident_text": "An infected endpoint generated periodic encrypted connections consistent with command-and-control beaconing.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "MALWARE",
+        "SQL_INJECTION"
+      ]
+    },
+    {
+      "record_id": "NLP-0183",
+      "incident_text": "The public service received an extreme surge of requests from distributed sources and became unavailable to legitimate users. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0193",
+      "incident_text": "Inbound traffic exceeded normal capacity and exhausted the web gateway's connection resources. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BENIGN",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0192",
+      "incident_text": "Inbound traffic exceeded normal capacity and exhausted the web gateway's connection resources.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BENIGN",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "NLP-0174",
+      "incident_text": "An infected endpoint generated periodic encrypted connections consistent with command-and-control beaconing. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "MALWARE",
+        "SQL_INJECTION"
+      ]
+    },
+    {
+      "record_id": "NLP-0172",
+      "incident_text": "Multiple hosts received instructions from a shared external controller and produced synchronized network activity.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "DDOS"
+      ]
+    },
+    {
+      "record_id": "NLP-0173",
+      "incident_text": "Several internal devices contacted the same remote infrastructure at regular intervals and downloaded small command messages.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0161",
+      "incident_text": "Several internal devices contacted the same remote infrastructure at regular intervals and downloaded small command messages.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0164",
+      "incident_text": "An infected endpoint generated periodic encrypted connections consistent with command-and-control beaconing. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0170",
+      "incident_text": "An infected endpoint generated periodic encrypted connections consistent with command-and-control beaconing. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0176",
+      "incident_text": "An infected endpoint generated periodic encrypted connections consistent with command-and-control beaconing. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "MALWARE",
+        "DDOS"
+      ]
+    },
+    {
+      "record_id": "NLP-0163",
+      "incident_text": "An infected endpoint generated periodic encrypted connections consistent with command-and-control beaconing. The source had not previously been associated with normal activity.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "DDOS"
+      ]
+    },
+    {
+      "record_id": "NLP-0175",
+      "incident_text": "Multiple hosts received instructions from a shared external controller and produced synchronized network activity. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0185",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages. The activity differed significantly from the recent operational baseline.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0184",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages. The activity differed significantly from the recent operational baseline.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0166",
+      "incident_text": "Several internal devices contacted the same remote infrastructure at regular intervals and downloaded small command messages. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0177",
+      "incident_text": "Several internal devices contacted the same remote infrastructure at regular intervals and downloaded small command messages. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0167",
+      "incident_text": "Several internal devices contacted the same remote infrastructure at regular intervals and downloaded small command messages. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0195",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "IDENTITY_THEFT"
+      ]
+    },
+    {
+      "record_id": "NLP-0182",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "IDENTITY_THEFT"
+      ]
+    },
+    {
+      "record_id": "NLP-0197",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0199",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0191",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages. The source had not previously been associated with normal activity.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "NLP-0096",
+      "incident_text": "Unexpected request parameters triggered application errors and were followed by access to restricted records.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "BENIGN",
+        "RANSOMWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0086",
+      "incident_text": "Unexpected request parameters triggered application errors and were followed by access to restricted records.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "BENIGN",
+        "RANSOMWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0162",
+      "incident_text": "Several internal devices contacted the same remote infrastructure at regular intervals and downloaded small command messages. The source had not previously been associated with normal activity.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0084",
+      "incident_text": "Unexpected request parameters triggered application errors and were followed by access to restricted records. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "BENIGN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0090",
+      "incident_text": "Unexpected request parameters triggered application errors and were followed by access to restricted records. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "BENIGN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0178",
+      "incident_text": "An internet-connected device repeatedly communicated with known control infrastructure without user activity. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "MALWARE",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0088",
+      "incident_text": "The public application received crafted requests that exploited an input-validation weakness and exposed protected application data. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "DDOS",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "NLP-0097",
+      "incident_text": "The public application received crafted requests that exploited an input-validation weakness and exposed protected application data. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 1.0,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "DDOS",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "NLP-0188",
+      "incident_text": "Many remote systems repeatedly targeted one public endpoint until response times became unacceptable. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99999999,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "NLP-0087",
+      "incident_text": "Unexpected request parameters triggered application errors and were followed by access to restricted records. The source had not previously been associated with normal activity.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 0.99999998,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "BENIGN",
+        "IDENTITY_THEFT"
+      ]
+    },
+    {
+      "record_id": "NLP-0099",
+      "incident_text": "The public application received crafted requests that exploited an input-validation weakness and exposed protected application data.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 0.99999997,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "DDOS",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "NLP-0081",
+      "incident_text": "The public application received crafted requests that exploited an input-validation weakness and exposed protected application data.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 0.99999997,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "DDOS",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "NLP-0181",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99999996,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "PHISHING"
+      ]
+    },
+    {
+      "record_id": "NLP-0198",
+      "incident_text": "A distributed packet flood saturated network bandwidth and caused intermittent service outages. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99999996,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "PHISHING"
+      ]
+    },
+    {
+      "record_id": "NLP-0147",
+      "incident_text": "Sensitive personal and financial information was copied from the organization and later offered for sale. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99999993,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "PHISHING",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0168",
+      "incident_text": "An internet-connected device repeatedly communicated with known control infrastructure without user activity.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 0.99999992,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "BENIGN",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0171",
+      "incident_text": "An internet-connected device repeatedly communicated with known control infrastructure without user activity.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 0.99999992,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "BENIGN",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0165",
+      "incident_text": "An internet-connected device repeatedly communicated with known control infrastructure without user activity.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 0.99999992,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "BENIGN",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0194",
+      "incident_text": "Many remote systems repeatedly targeted one public endpoint until response times became unacceptable.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99999963,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "NLP-0186",
+      "incident_text": "Many remote systems repeatedly targeted one public endpoint until response times became unacceptable.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99999963,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "NLP-0180",
+      "incident_text": "An internet-connected device repeatedly communicated with known control infrastructure without user activity. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 0.99999902,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "BENIGN",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0098",
+      "incident_text": "The public application received crafted requests that exploited an input-validation weakness and exposed protected application data. The source had not previously been associated with normal activity.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 0.99999731,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "DDOS",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "NLP-0112",
+      "incident_text": "A person claiming to be a senior manager requested confidential documents through an unusual communication channel. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "PHISHING",
+      "confidence": 0.99999598,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "PHISHING",
+        "IDENTITY_THEFT",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0200",
+      "incident_text": "Many remote systems repeatedly targeted one public endpoint until response times became unacceptable. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99999413,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "BRUTE_FORCE",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "NLP-0072",
+      "incident_text": "After repeated failed sign-ins, the account showed one successful login and several unfamiliar transactions. The source had not previously been associated with normal activity.",
+      "actual_attack": "ACCOUNT_TAKEOVER",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.99998977,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "ACCOUNT_TAKEOVER",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "NLP-0146",
+      "incident_text": "Sensitive personal and financial information was copied from the organization and later offered for sale.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.9999893,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "PHISHING",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0151",
+      "incident_text": "Sensitive personal and financial information was copied from the organization and later offered for sale.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.9999893,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "PHISHING",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0143",
+      "incident_text": "Sensitive personal and financial information was copied from the organization and later offered for sale. The activity differed significantly from the recent operational baseline.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99998461,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "PHISHING",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0122",
+      "incident_text": "An authorized employee used elevated access to retrieve customer records unrelated to their assigned duties.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99995968,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "SQL_INJECTION",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0125",
+      "incident_text": "An authorized employee used elevated access to retrieve customer records unrelated to their assigned duties.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99995968,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "SQL_INJECTION",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0134",
+      "incident_text": "An authorized employee used elevated access to retrieve customer records unrelated to their assigned duties.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99995968,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "SQL_INJECTION",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0156",
+      "incident_text": "Sensitive personal and financial information was copied from the organization and later offered for sale. The source had not previously been associated with normal activity.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99994856,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0169",
+      "incident_text": "An internet-connected device repeatedly communicated with known control infrastructure without user activity. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "BOTNET_C2",
+      "predicted_attack": "BOTNET",
+      "confidence": 0.9998702,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BOTNET",
+        "MALWARE",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0196",
+      "incident_text": "Many remote systems repeatedly targeted one public endpoint until response times became unacceptable. The source had not previously been associated with normal activity.",
+      "actual_attack": "DOS_DDOS",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99985694,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "PORT_SCAN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0126",
+      "incident_text": "An authorized employee used elevated access to retrieve customer records unrelated to their assigned duties. The activity differed significantly from the recent operational baseline.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99984018,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "SQL_INJECTION",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0121",
+      "incident_text": "An authorized employee used elevated access to retrieve customer records unrelated to their assigned duties. The activity differed significantly from the recent operational baseline.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99984018,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "SQL_INJECTION",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0103",
+      "incident_text": "An employee was persuaded to install remote-support software by someone posing as an authorized technician. The source had not previously been associated with normal activity.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BENIGN",
+      "confidence": 0.99943325,
+      "decision": "NO_THREAT",
+      "top3": [
+        "BENIGN",
+        "BRUTE_FORCE",
+        "IDENTITY_THEFT"
+      ]
+    },
+    {
+      "record_id": "NLP-0138",
+      "incident_text": "An internal user altered protected records despite having no assigned responsibility for those accounts. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 0.9993871,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "BOTNET",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0133",
+      "incident_text": "An internal user altered protected records despite having no assigned responsibility for those accounts.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 0.99925191,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "BOTNET",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0117",
+      "incident_text": "An employee was persuaded to install remote-support software by someone posing as an authorized technician. The activity differed significantly from the recent operational baseline.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BENIGN",
+      "confidence": 0.99884454,
+      "decision": "NO_THREAT",
+      "top3": [
+        "BENIGN",
+        "BRUTE_FORCE",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0115",
+      "incident_text": "A person claiming to be a senior manager requested confidential documents through an unusual communication channel.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "PHISHING",
+      "confidence": 0.99871156,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "PHISHING",
+        "IDENTITY_THEFT",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0149",
+      "incident_text": "A logistics provider confirmed unauthorized disclosure of confidential records affecting multiple individuals. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99844799,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "ACCOUNT_TAKEOVER",
+        "SQL_INJECTION"
+      ]
+    },
+    {
+      "record_id": "NLP-0140",
+      "incident_text": "An internal user altered protected records despite having no assigned responsibility for those accounts. The activity differed significantly from the recent operational baseline.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 0.99840587,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "BOTNET",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0075",
+      "incident_text": "After repeated failed sign-ins, the account showed one successful login and several unfamiliar transactions. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "ACCOUNT_TAKEOVER",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.9981588,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "ACCOUNT_TAKEOVER",
+        "SQL_INJECTION"
+      ]
+    },
+    {
+      "record_id": "NLP-0108",
+      "incident_text": "An employee was persuaded to install remote-support software by someone posing as an authorized technician.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BENIGN",
+      "confidence": 0.99763148,
+      "decision": "NO_THREAT",
+      "top3": [
+        "BENIGN",
+        "BRUTE_FORCE",
+        "IDENTITY_THEFT"
+      ]
+    },
+    {
+      "record_id": "NLP-0109",
+      "incident_text": "An employee was persuaded to install remote-support software by someone posing as an authorized technician.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BENIGN",
+      "confidence": 0.99763148,
+      "decision": "NO_THREAT",
+      "top3": [
+        "BENIGN",
+        "BRUTE_FORCE",
+        "IDENTITY_THEFT"
+      ]
+    },
+    {
+      "record_id": "NLP-0092",
+      "incident_text": "The web service was compromised through an unpatched application component exposed to the internet. The source had not previously been associated with normal activity.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99693329,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "SQL_INJECTION",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0093",
+      "incident_text": "The web service was compromised through an unpatched application component exposed to the internet. The source had not previously been associated with normal activity.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99693329,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "SQL_INJECTION",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0094",
+      "incident_text": "The web service was compromised through an unpatched application component exposed to the internet. The source had not previously been associated with normal activity.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "DDOS",
+      "confidence": 0.99693329,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "DDOS",
+        "SQL_INJECTION",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0067",
+      "incident_text": "After repeated failed sign-ins, the account showed one successful login and several unfamiliar transactions.",
+      "actual_attack": "ACCOUNT_TAKEOVER",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.99660787,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "ACCOUNT_TAKEOVER",
+        "SQL_INJECTION"
+      ]
+    },
+    {
+      "record_id": "NLP-0063",
+      "incident_text": "After repeated failed sign-ins, the account showed one successful login and several unfamiliar transactions. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "ACCOUNT_TAKEOVER",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.99648182,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "ACCOUNT_TAKEOVER",
+        "SQL_INJECTION"
+      ]
+    },
+    {
+      "record_id": "NLP-0129",
+      "incident_text": "An internal user altered protected records despite having no assigned responsibility for those accounts. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "SQL_INJECTION",
+      "confidence": 0.99633451,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "SQL_INJECTION",
+        "IDENTITY_THEFT",
+        "BOTNET"
+      ]
+    },
+    {
+      "record_id": "NLP-0118",
+      "incident_text": "An employee was persuaded to install remote-support software by someone posing as an authorized technician. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BENIGN",
+      "confidence": 0.99611003,
+      "decision": "NO_THREAT",
+      "top3": [
+        "BENIGN",
+        "MALWARE",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0106",
+      "incident_text": "An employee was persuaded to install remote-support software by someone posing as an authorized technician. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BENIGN",
+      "confidence": 0.99611003,
+      "decision": "NO_THREAT",
+      "top3": [
+        "BENIGN",
+        "MALWARE",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0132",
+      "incident_text": "A database administrator exported sensitive information without an approved business purpose. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99107997,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "SQL_INJECTION",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0123",
+      "incident_text": "A database administrator exported sensitive information without an approved business purpose. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.99107997,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "SQL_INJECTION",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "NLP-0145",
+      "incident_text": "A storage location containing customer information was exposed publicly, allowing unauthorized access to confidential records. The source had not previously been associated with normal activity.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.98829355,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "BENIGN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "NLP-0113",
+      "incident_text": "A caller pretending to be technical support persuaded an employee to disclose a one-time authentication code. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.98702525,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "XSS",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0104",
+      "incident_text": "A caller pretending to be technical support persuaded an employee to disclose a one-time authentication code. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.98702525,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "XSS",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0160",
+      "incident_text": "A retail organization confirmed unauthorized disclosure of confidential records affecting multiple individuals. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "IDENTITY_THEFT",
+      "confidence": 0.98452731,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "IDENTITY_THEFT",
+        "MALWARE",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "NLP-0049",
+      "incident_text": "Endpoint monitoring detected an unapproved program changing browser settings and launching after every restart.",
+      "actual_attack": "MALWARE",
+      "predicted_attack": "RANSOMWARE",
+      "confidence": 0.98449968,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "RANSOMWARE",
+        "XSS",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0101",
+      "incident_text": "A person claiming to be a senior manager requested confidential documents through an unusual communication channel. Relevant authentication, endpoint, and access logs were retained for investigation.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "PHISHING",
+      "confidence": 0.9792215,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "PHISHING",
+        "IDENTITY_THEFT",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0114",
+      "incident_text": "A caller pretending to be technical support persuaded an employee to disclose a one-time authentication code. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.97758392,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "IDENTITY_THEFT",
+        "PHISHING"
+      ]
+    },
+    {
+      "record_id": "NLP-0102",
+      "incident_text": "A caller pretending to be technical support persuaded an employee to disclose a one-time authentication code. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.97758392,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "IDENTITY_THEFT",
+        "PHISHING"
+      ]
+    },
+    {
+      "record_id": "NLP-0119",
+      "incident_text": "A caller pretending to be technical support persuaded an employee to disclose a one-time authentication code. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.97758392,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "IDENTITY_THEFT",
+        "PHISHING"
+      ]
+    },
+    {
+      "record_id": "NLP-0136",
+      "incident_text": "A database administrator exported sensitive information without an approved business purpose. The source had not previously been associated with normal activity.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "PORT_SCAN",
+      "confidence": 0.97469158,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "PORT_SCAN",
+        "IDENTITY_THEFT",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0128",
+      "incident_text": "A database administrator exported sensitive information without an approved business purpose. The source had not previously been associated with normal activity.",
+      "actual_attack": "PRIVILEGE_MISUSE",
+      "predicted_attack": "PORT_SCAN",
+      "confidence": 0.97469158,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "PORT_SCAN",
+        "IDENTITY_THEFT",
+        "BENIGN"
+      ]
+    },
+    {
+      "record_id": "NLP-0045",
+      "incident_text": "Endpoint monitoring detected an unapproved program changing browser settings and launching after every restart. The activity differed significantly from the recent operational baseline.",
+      "actual_attack": "MALWARE",
+      "predicted_attack": "RANSOMWARE",
+      "confidence": 0.97298711,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "RANSOMWARE",
+        "XSS",
+        "MALWARE"
+      ]
+    },
+    {
+      "record_id": "NLP-0046",
+      "incident_text": "Endpoint monitoring detected an unapproved program changing browser settings and launching after every restart. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "MALWARE",
+      "predicted_attack": "RANSOMWARE",
+      "confidence": 0.9681949,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "RANSOMWARE",
+        "MALWARE",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "NLP-0155",
+      "incident_text": "A compromised account was used to download a large archive of protected customer data. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "ACCOUNT_TAKEOVER",
+      "confidence": 0.96458758,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "ACCOUNT_TAKEOVER",
+        "IDENTITY_THEFT",
+        "PHISHING"
+      ]
+    },
+    {
+      "record_id": "NLP-0150",
+      "incident_text": "A compromised account was used to download a large archive of protected customer data. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "DATA_BREACH",
+      "predicted_attack": "ACCOUNT_TAKEOVER",
+      "confidence": 0.96458758,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "ACCOUNT_TAKEOVER",
+        "IDENTITY_THEFT",
+        "PHISHING"
+      ]
+    },
+    {
+      "record_id": "NLP-0057",
+      "incident_text": "Endpoint monitoring detected an unapproved program changing browser settings and launching after every restart. Analysts requested containment and a review of related accounts and systems.",
+      "actual_attack": "MALWARE",
+      "predicted_attack": "RANSOMWARE",
+      "confidence": 0.95945398,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "RANSOMWARE",
+        "MALWARE",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "NLP-0091",
+      "incident_text": "An attacker abused a vulnerable web endpoint to execute unauthorized commands on the server. The event was escalated because the affected system processed sensitive information.",
+      "actual_attack": "WEB_EXPLOITATION",
+      "predicted_attack": "XSS",
+      "confidence": 0.95367035,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "XSS",
+        "DDOS",
+        "BOTNET"
+      ]
+    },
+    {
+      "record_id": "NLP-0116",
+      "incident_text": "A caller pretending to be technical support persuaded an employee to disclose a one-time authentication code.",
+      "actual_attack": "SOCIAL_ENGINEERING",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.94105812,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "PHISHING",
+        "BENIGN"
+      ]
+    }
+  ],
+  "error_count": 131,
+  "high_confidence_error_count": 112,
+  "binary": {
+    "records": 280,
+    "accuracy": 0.975,
+    "precision": 1.0,
+    "recall": 0.975,
+    "specificity": 0.0,
+    "f1": 0.98734177,
+    "roc_auc": null,
+    "pr_auc": 1.0,
+    "confusion": {
+      "tp": 273,
+      "tn": 0,
+      "fp": 0,
+      "fn": 7
+    }
+  },
+  "dataset": {
+    "filename": "incident_text_test_blind.csv",
+    "answer_key_filename": "incident_text_test_answer_key.csv",
+    "text_column": "incident_text",
+    "label_column": "attack_type",
+    "id_column": "record_id",
+    "total_evaluated": 280,
+    "skipped_missing_label": 0,
+    "skipped_invalid_text": 0,
+    "unmatched_answer_key_records": 0,
+    "unknown_label_counts": {
+      "DOS_DDOS": 20,
+      "WEB_EXPLOITATION": 20,
+      "PRIVILEGE_MISUSE": 20,
+      "BOTNET_C2": 20,
+      "DATA_BREACH": 20,
+      "SOCIAL_ENGINEERING": 20
+    },
+    "source_is_synthetic": true
+  },
+  "scientific_note": "Evaluation metrics describe only the supplied labelled dataset. Synthetic results are not evidence of real-world performance."
+}

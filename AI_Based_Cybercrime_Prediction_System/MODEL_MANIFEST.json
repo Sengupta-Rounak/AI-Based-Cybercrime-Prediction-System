@@ -1,0 +1,105 @@
+{
+  "system_name": "AI Based Cybercrime Prediction System",
+  "runtime": "Portable local Python standard-library web application",
+  "launcher": "START.bat",
+  "modules": {
+    "network_forecasting": {
+      "model": "models/portable_prediction_model.pkl.gz",
+      "feature_schema": "models/cybercrime_feature_schema.json",
+      "metrics": "models/cybercrime_prediction_metrics.json",
+      "model_card": "models/model_card.json",
+      "features": 91,
+      "horizons_seconds": [
+        5,
+        10,
+        30
+      ],
+      "source_is_synthetic": true,
+      "status": "Demonstration network model; real timestamped labelled network validation is still required."
+    },
+    "single_label_text_fallback": {
+      "model": "models/portable_text_classifier.json.gz",
+      "metrics": "models/text_classifier_metrics.json",
+      "model_card": "models/text_model_card.json",
+      "source_is_synthetic": true,
+      "status": "Synthetic fallback for workflow testing and benign/threat triage."
+    },
+    "real_incident_multilabel_text": {
+      "model": "models/real_incident_multilabel_classifier.json.gz",
+      "metrics": "models/real_incident_multilabel_metrics.json",
+      "model_card": "models/real_incident_multilabel_model_card.json",
+      "source_is_synthetic": false,
+      "validation_status": "Real-data internal chronological holdout",
+      "train_records": 4624,
+      "validation_records": 1073,
+      "test_records": 1186,
+      "independent_external_validation": false
+    }
+  },
+  "focused_reports": [
+    "models/cybercrime_prediction_metrics.json",
+    "models/model_card.json",
+    "models/real_incident_multilabel_metrics.json",
+    "models/real_incident_multilabel_model_card.json",
+    "docs/ARCHITECTURE.md",
+    "docs/METHODOLOGY.md",
+    "docs/DATA_REQUIREMENTS.md"
+  ],
+  "scientific_limitations": [
+    "Network-model evidence remains synthetic.",
+    "Real incident metrics are an internal chronological holdout, not independent external validation.",
+    "The real incident corpus does not provide genuine benign operational narratives.",
+    "Rare incident labels have limited evidence.",
+    "Human analyst review is required for consequential actions."
+  ],
+  "artifact_integrity": {
+    "START.bat": {
+      "sha256": "3b730f32aef954991eeecadc5fc75bc8142f0eb1f8d3a1e280d05a8e5fadd3b0",
+      "bytes": 4563
+    },
+    "portable_server.py": {
+      "sha256": "261927e0b683e7bed1afa00aabe7ee9ef787642cf768a0442e8544b5b02124eb",
+      "bytes": 69477
+    },
+    "web/index.html": {
+      "sha256": "fcb2705d0e015007d4f6fdc73ee7693bb458242d6a68c37b2c9534d44bf044ea",
+      "bytes": 76442
+    },
+    "verify_system.py": {
+      "sha256": "f28f1e30a5906b2de25fd9d6bf0a4297ead384d5e4888b810d29a34458c36bf8",
+      "bytes": 5596
+    },
+    "nlp_classifier.py": {
+      "sha256": "40f0a81029b73c7fb4844c151eeda81550060d21ed35fc4927a0531a23506c14",
+      "bytes": 15672
+    },
+    "nlp_evaluation.py": {
+      "sha256": "dafb021405928f33a0d4840330999a80b97225784a441c478e1fa4e617ec66e6",
+      "bytes": 24312
+    },
+    "realworld_nlp.py": {
+      "sha256": "8411cbbed34bbda74b1dd96276eb75e82de75c1e4970c415fb25c4c2b1cb46a3",
+      "bytes": 31486
+    },
+    "incident_multilabel.py": {
+      "sha256": "d9d12cac501c2ce8013aad660690bde624049d692cbdda64fc6dca8fb82d8ead",
+      "bytes": 8997
+    },
+    "models/portable_prediction_model.pkl.gz": {
+      "sha256": "27b6b7ce0f44ecbc074870111bb1d84513ce1b4017239bcbb5eb5a9343580436",
+      "bytes": 830949
+    },
+    "models/portable_text_classifier.json.gz": {
+      "sha256": "2c342f16c1a66414b292d3879134e5a3c83b849a44868dd57e0c1ff9ca5fed9a",
+      "bytes": 23680
+    },
+    "models/real_incident_multilabel_classifier.json.gz": {
+      "sha256": "71f3ac0ff3ed73c0200ac41070addf3f76c080bbb343e6866e4b3c0ead6f0911",
+      "bytes": 1649411
+    },
+    "data/processed/universal_pre_attack_windows.csv": {
+      "sha256": "fd1fec8f462b61ca013adeb54d7ed20df7daab8afedd71cdf292792e03679d1f",
+      "bytes": 2688219
+    }
+  }
+}

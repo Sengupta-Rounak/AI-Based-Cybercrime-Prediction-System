@@ -1,0 +1,1474 @@
+{
+  "source_name": "synthetic_multiclass_timestamped_flows.csv",
+  "source_is_synthetic": true,
+  "training_profile": "fast",
+  "window_metadata": {
+    "window_config": {
+      "observation_seconds": 30,
+      "horizons_seconds": [
+        5,
+        10,
+        30
+      ],
+      "step_seconds": 5
+    },
+    "input_rows": 45303,
+    "window_rows": 1906,
+    "attack_onsets": 112,
+    "attack_types": [
+      "BOT",
+      "DDOS",
+      "DOS_GOLDENEYE",
+      "DOS_HULK",
+      "DOS_SLOWHTTPTEST",
+      "DOS_SLOWLORIS",
+      "FTP_PATATOR",
+      "HEARTBLEED",
+      "INFILTRATION",
+      "PORTSCAN",
+      "SSH_PATATOR",
+      "WEB_ATTACK_BRUTE_FORCE",
+      "WEB_ATTACK_SQL_INJECTION",
+      "WEB_ATTACK_XSS"
+    ],
+    "timestamp_column": "Timestamp",
+    "label_column": "Label",
+    "source_ip_column": "Source IP",
+    "destination_ip_column": "Destination IP",
+    "source_port_column": "Source Port",
+    "destination_port_column": "Destination Port",
+    "protocol_column": "Protocol",
+    "numeric_columns_used": {
+      "flow_packets_s": "Flow Packets/s",
+      "flow_bytes_s": "Flow Bytes/s",
+      "syn_count": "SYN Flag Count",
+      "ack_count": "ACK Flag Count",
+      "rst_count": "RST Flag Count",
+      "packet_length_mean": "Packet Length Mean",
+      "flow_duration": "Flow Duration",
+      "fwd_packets": "Total Fwd Packets",
+      "bwd_packets": "Total Backward Packets"
+    },
+    "forecasting_rule": "Every observation window contains benign-labelled traffic only. Each horizon target is positive only when the next attack onset occurs after the observation window and inside that horizon.",
+    "per_horizon_counts": {
+      "5": {
+        "positive_windows": 112,
+        "negative_windows": 1794,
+        "attack_types": {
+          "BOT": 8,
+          "FTP_PATATOR": 8,
+          "WEB_ATTACK_BRUTE_FORCE": 8,
+          "DOS_SLOWLORIS": 8,
+          "DDOS": 8,
+          "WEB_ATTACK_SQL_INJECTION": 8,
+          "HEARTBLEED": 8,
+          "WEB_ATTACK_XSS": 8,
+          "PORTSCAN": 8,
+          "DOS_GOLDENEYE": 8,
+          "DOS_SLOWHTTPTEST": 8,
+          "INFILTRATION": 8,
+          "DOS_HULK": 8,
+          "SSH_PATATOR": 8
+        }
+      },
+      "10": {
+        "positive_windows": 224,
+        "negative_windows": 1682,
+        "attack_types": {
+          "BOT": 16,
+          "FTP_PATATOR": 16,
+          "WEB_ATTACK_BRUTE_FORCE": 16,
+          "DOS_SLOWLORIS": 16,
+          "DDOS": 16,
+          "WEB_ATTACK_SQL_INJECTION": 16,
+          "HEARTBLEED": 16,
+          "WEB_ATTACK_XSS": 16,
+          "PORTSCAN": 16,
+          "DOS_GOLDENEYE": 16,
+          "DOS_SLOWHTTPTEST": 16,
+          "INFILTRATION": 16,
+          "DOS_HULK": 16,
+          "SSH_PATATOR": 16
+        }
+      },
+      "30": {
+        "positive_windows": 672,
+        "negative_windows": 1234,
+        "attack_types": {
+          "BOT": 48,
+          "FTP_PATATOR": 48,
+          "WEB_ATTACK_BRUTE_FORCE": 48,
+          "DOS_SLOWLORIS": 48,
+          "DDOS": 48,
+          "WEB_ATTACK_SQL_INJECTION": 48,
+          "HEARTBLEED": 48,
+          "WEB_ATTACK_XSS": 48,
+          "PORTSCAN": 48,
+          "DOS_GOLDENEYE": 48,
+          "DOS_SLOWHTTPTEST": 48,
+          "INFILTRATION": 48,
+          "DOS_HULK": 48,
+          "SSH_PATATOR": 48
+        }
+      }
+    }
+  },
+  "feature_count": 91,
+  "feature_columns": [
+    "flow_count",
+    "flows_per_second",
+    "unique_source_ips",
+    "source_concentration",
+    "source_entropy",
+    "unique_destination_ips",
+    "destination_concentration",
+    "destination_entropy",
+    "unique_destination_ports",
+    "destination_port_concentration",
+    "destination_port_entropy",
+    "unique_source_ports",
+    "source_port_entropy",
+    "protocol_entropy",
+    "unique_protocols",
+    "flow_packets_s_mean",
+    "flow_packets_s_std",
+    "flow_packets_s_min",
+    "flow_packets_s_max",
+    "flow_packets_s_median",
+    "flow_packets_s_p95",
+    "flow_packets_s_slope",
+    "flow_packets_s_cv",
+    "flow_bytes_s_mean",
+    "flow_bytes_s_std",
+    "flow_bytes_s_min",
+    "flow_bytes_s_max",
+    "flow_bytes_s_median",
+    "flow_bytes_s_p95",
+    "flow_bytes_s_slope",
+    "flow_bytes_s_cv",
+    "syn_count_mean",
+    "syn_count_std",
+    "syn_count_min",
+    "syn_count_max",
+    "syn_count_median",
+    "syn_count_p95",
+    "syn_count_slope",
+    "syn_count_cv",
+    "ack_count_mean",
+    "ack_count_std",
+    "ack_count_min",
+    "ack_count_max",
+    "ack_count_median",
+    "ack_count_p95",
+    "ack_count_slope",
+    "ack_count_cv",
+    "rst_count_mean",
+    "rst_count_std",
+    "rst_count_min",
+    "rst_count_max",
+    "rst_count_median",
+    "rst_count_p95",
+    "rst_count_slope",
+    "rst_count_cv",
+    "packet_length_mean_mean",
+    "packet_length_mean_std",
+    "packet_length_mean_min",
+    "packet_length_mean_max",
+    "packet_length_mean_median",
+    "packet_length_mean_p95",
+    "packet_length_mean_slope",
+    "packet_length_mean_cv",
+    "flow_duration_mean",
+    "flow_duration_std",
+    "flow_duration_min",
+    "flow_duration_max",
+    "flow_duration_median",
+    "flow_duration_p95",
+    "flow_duration_slope",
+    "flow_duration_cv",
+    "fwd_packets_mean",
+    "fwd_packets_std",
+    "fwd_packets_min",
+    "fwd_packets_max",
+    "fwd_packets_median",
+    "fwd_packets_p95",
+    "fwd_packets_slope",
+    "fwd_packets_cv",
+    "bwd_packets_mean",
+    "bwd_packets_std",
+    "bwd_packets_min",
+    "bwd_packets_max",
+    "bwd_packets_median",
+    "bwd_packets_p95",
+    "bwd_packets_slope",
+    "bwd_packets_cv",
+    "syn_ack_ratio",
+    "rst_ack_ratio",
+    "fwd_bwd_ratio",
+    "traffic_burstiness"
+  ],
+  "split": {
+    "strategy": "purged chronological 60/20/20",
+    "purge_seconds": 60,
+    "train_rows": 1143,
+    "validation_rows": 372,
+    "test_rows": 373
+  },
+  "horizons": {
+    "5": {
+      "binary_candidate_results": {
+        "Random Forest": {
+          "validation_pr_auc": 0.9051948331166595,
+          "validation_f1": 0.8260869565217391,
+          "validation_precision": 0.7916666666666666,
+          "validation_recall": 0.8636363636363636,
+          "training_seconds": 0.24841518799985352
+        },
+        "Extra Trees": {
+          "validation_pr_auc": 0.9160592594538028,
+          "validation_f1": 0.7727272727272727,
+          "validation_precision": 0.7727272727272727,
+          "validation_recall": 0.7727272727272727,
+          "training_seconds": 0.1612381219999861
+        }
+      },
+      "type_candidate_results": {
+        "Random Forest": {
+          "validation_macro_f1": 0.8666666666666666,
+          "validation_weighted_f1": 0.890909090909091,
+          "validation_accuracy": 0.9090909090909091,
+          "training_seconds": 0.2108475030001955
+        },
+        "Extra Trees": {
+          "validation_macro_f1": 0.819047619047619,
+          "validation_weighted_f1": 0.8454545454545456,
+          "validation_accuracy": 0.8636363636363636,
+          "training_seconds": 0.14071198800002094
+        }
+      },
+      "selected_binary_model": "Extra Trees",
+      "selected_type_model": "Random Forest",
+      "threshold_selection": {
+        "threshold": 0.56,
+        "validation_f1": 0.85,
+        "validation_false_alarms_per_hour": 1.2743362831858407
+      },
+      "binary_test_evaluation": {
+        "accuracy": 0.9812332439678284,
+        "balanced_accuracy": 0.8957507082152975,
+        "precision": 0.8421052631578947,
+        "recall": 0.8,
+        "f1": 0.8205128205128205,
+        "pr_auc": 0.9049808505334822,
+        "roc_auc": 0.995184135977337,
+        "brier_score": 0.013287098960076005,
+        "confusion_matrix": [
+          [
+            350,
+            3
+          ],
+          [
+            4,
+            16
+          ]
+        ],
+        "false_positive_count": 3,
+        "false_alarms_per_hour": 3.9272727272727277,
+        "median_warning_lead_time_seconds": 1.6465,
+        "threshold": 0.56,
+        "test_rows": 373,
+        "positive_test_rows": 20,
+        "prediction_seconds": 0.057564248000062435,
+        "windows_per_second": 6479.716368388856
+      },
+      "attack_type_test_evaluation": {
+        "available": true,
+        "accuracy": 0.95,
+        "macro_f1": 0.9619047619047619,
+        "weighted_f1": 0.9466666666666667,
+        "confusion_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ],
+        "labels": [
+          "BOT",
+          "DDOS",
+          "DOS_GOLDENEYE",
+          "DOS_HULK",
+          "DOS_SLOWHTTPTEST",
+          "DOS_SLOWLORIS",
+          "FTP_PATATOR",
+          "HEARTBLEED",
+          "INFILTRATION",
+          "PORTSCAN",
+          "SSH_PATATOR",
+          "WEB_ATTACK_BRUTE_FORCE",
+          "WEB_ATTACK_SQL_INJECTION",
+          "WEB_ATTACK_XSS"
+        ],
+        "classification_report": {
+          "BOT": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "DDOS": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "DOS_GOLDENEYE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "DOS_HULK": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "DOS_SLOWHTTPTEST": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "DOS_SLOWLORIS": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "FTP_PATATOR": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "HEARTBLEED": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "INFILTRATION": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "PORTSCAN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "SSH_PATATOR": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "WEB_ATTACK_BRUTE_FORCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 1.0
+          },
+          "WEB_ATTACK_SQL_INJECTION": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 2.0
+          },
+          "WEB_ATTACK_XSS": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 2.0
+          },
+          "accuracy": 0.95,
+          "macro avg": {
+            "precision": 0.9761904761904762,
+            "recall": 0.9642857142857143,
+            "f1-score": 0.9619047619047619,
+            "support": 20.0
+          },
+          "weighted avg": {
+            "precision": 0.9666666666666666,
+            "recall": 0.95,
+            "f1-score": 0.9466666666666667,
+            "support": 20.0
+          }
+        },
+        "test_rows": 20
+      },
+      "train_positive_windows": 68,
+      "validation_positive_windows": 22,
+      "test_positive_windows": 20
+    },
+    "10": {
+      "binary_candidate_results": {
+        "Random Forest": {
+          "validation_pr_auc": 0.9605584628535393,
+          "validation_f1": 0.8723404255319149,
+          "validation_precision": 0.82,
+          "validation_recall": 0.9318181818181818,
+          "training_seconds": 0.2429751550000674
+        },
+        "Extra Trees": {
+          "validation_pr_auc": 0.9821823839959902,
+          "validation_f1": 0.9032258064516129,
+          "validation_precision": 0.8571428571428571,
+          "validation_recall": 0.9545454545454546,
+          "training_seconds": 0.15426798900011818
+        }
+      },
+      "type_candidate_results": {
+        "Random Forest": {
+          "validation_macro_f1": 0.9374149659863945,
+          "validation_weighted_f1": 0.9536796536796537,
+          "validation_accuracy": 0.9545454545454546,
+          "training_seconds": 0.24162954100006573
+        },
+        "Extra Trees": {
+          "validation_macro_f1": 0.808843537414966,
+          "validation_weighted_f1": 0.8718614718614718,
+          "validation_accuracy": 0.8863636363636364,
+          "training_seconds": 0.15266215400015426
+        }
+      },
+      "selected_binary_model": "Extra Trees",
+      "selected_type_model": "Random Forest",
+      "threshold_selection": {
+        "threshold": 0.53,
+        "validation_f1": 0.9425287356321839,
+        "validation_false_alarms_per_hour": 2.5486725663716814
+      },
+      "binary_test_evaluation": {
+        "accuracy": 0.9812332439678284,
+        "balanced_accuracy": 0.9674924924924925,
+        "precision": 0.8837209302325582,
+        "recall": 0.95,
+        "f1": 0.9156626506024096,
+        "pr_auc": 0.9762346788310152,
+        "roc_auc": 0.9970720720720722,
+        "brier_score": 0.014752663734534493,
+        "confusion_matrix": [
+          [
+            328,
+            5
+          ],
+          [
+            2,
+            38
+          ]
+        ],
+        "false_positive_count": 5,
+        "false_alarms_per_hour": 6.545454545454546,
+        "median_warning_lead_time_seconds": 4.178,
+        "threshold": 0.53,
+        "test_rows": 373,
+        "positive_test_rows": 40,
+        "prediction_seconds": 0.0557681400000547,
+        "windows_per_second": 6688.40667807164
+      },
+      "attack_type_test_evaluation": {
+        "available": true,
+        "accuracy": 0.95,
+        "macro_f1": 0.9501133786848073,
+        "weighted_f1": 0.9468253968253968,
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3
+          ]
+        ],
+        "labels": [
+          "BOT",
+          "DDOS",
+          "DOS_GOLDENEYE",
+          "DOS_HULK",
+          "DOS_SLOWHTTPTEST",
+          "DOS_SLOWLORIS",
+          "FTP_PATATOR",
+          "HEARTBLEED",
+          "INFILTRATION",
+          "PORTSCAN",
+          "SSH_PATATOR",
+          "WEB_ATTACK_BRUTE_FORCE",
+          "WEB_ATTACK_SQL_INJECTION",
+          "WEB_ATTACK_XSS"
+        ],
+        "classification_report": {
+          "BOT": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "DDOS": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "DOS_GOLDENEYE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "DOS_HULK": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "DOS_SLOWHTTPTEST": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1-score": 0.6666666666666666,
+            "support": 2.0
+          },
+          "DOS_SLOWLORIS": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "FTP_PATATOR": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "HEARTBLEED": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "INFILTRATION": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "PORTSCAN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 4.0
+          },
+          "SSH_PATATOR": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "WEB_ATTACK_BRUTE_FORCE": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 2.0
+          },
+          "WEB_ATTACK_SQL_INJECTION": {
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1-score": 0.8888888888888888,
+            "support": 4.0
+          },
+          "WEB_ATTACK_XSS": {
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1-score": 0.8571428571428571,
+            "support": 4.0
+          },
+          "accuracy": 0.95,
+          "macro avg": {
+            "precision": 0.9714285714285715,
+            "recall": 0.9464285714285714,
+            "f1-score": 0.9501133786848073,
+            "support": 40.0
+          },
+          "weighted avg": {
+            "precision": 0.96,
+            "recall": 0.95,
+            "f1-score": 0.9468253968253968,
+            "support": 40.0
+          }
+        },
+        "test_rows": 40
+      },
+      "train_positive_windows": 136,
+      "validation_positive_windows": 44,
+      "test_positive_windows": 40
+    },
+    "30": {
+      "binary_candidate_results": {
+        "Random Forest": {
+          "validation_pr_auc": 0.9963284998994351,
+          "validation_f1": 0.9703703703703703,
+          "validation_precision": 0.9492753623188406,
+          "validation_recall": 0.9924242424242424,
+          "training_seconds": 0.24624371200002315
+        },
+        "Extra Trees": {
+          "validation_pr_auc": 0.9972096672069631,
+          "validation_f1": 0.9703703703703703,
+          "validation_precision": 0.9492753623188406,
+          "validation_recall": 0.9924242424242424,
+          "training_seconds": 0.15346017100000608
+        }
+      },
+      "type_candidate_results": {
+        "Random Forest": {
+          "validation_macro_f1": 0.7275049950049951,
+          "validation_weighted_f1": 0.7594474464929011,
+          "validation_accuracy": 0.7575757575757576,
+          "training_seconds": 0.21835858800000096
+        },
+        "Extra Trees": {
+          "validation_macro_f1": 0.7181287893475093,
+          "validation_weighted_f1": 0.765770066784045,
+          "validation_accuracy": 0.7727272727272727,
+          "training_seconds": 0.15404744800002845
+        }
+      },
+      "selected_binary_model": "Extra Trees",
+      "selected_type_model": "Random Forest",
+      "threshold_selection": {
+        "threshold": 0.39,
+        "validation_f1": 0.9776119402985075,
+        "validation_false_alarms_per_hour": 6.371681415929204
+      },
+      "binary_test_evaluation": {
+        "accuracy": 0.9865951742627346,
+        "balanced_accuracy": 0.9901185770750989,
+        "precision": 0.96,
+        "recall": 1.0,
+        "f1": 0.9795918367346939,
+        "pr_auc": 0.9978322649001758,
+        "roc_auc": 0.9989789196310934,
+        "brier_score": 0.011294050852634437,
+        "confusion_matrix": [
+          [
+            248,
+            5
+          ],
+          [
+            0,
+            120
+          ]
+        ],
+        "false_positive_count": 5,
+        "false_alarms_per_hour": 6.545454545454546,
+        "median_warning_lead_time_seconds": 14.6295,
+        "threshold": 0.39,
+        "test_rows": 373,
+        "positive_test_rows": 120,
+        "prediction_seconds": 0.061461284999950294,
+        "windows_per_second": 6068.861072467028
+      },
+      "attack_type_test_evaluation": {
+        "available": true,
+        "accuracy": 0.675,
+        "macro_f1": 0.6725097767585453,
+        "weighted_f1": 0.6593292052774812,
+        "confusion_matrix": [
+          [
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            10,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            4,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            3,
+            8,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0,
+            7,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9,
+            3
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            8,
+            2
+          ]
+        ],
+        "labels": [
+          "BOT",
+          "DDOS",
+          "DOS_GOLDENEYE",
+          "DOS_HULK",
+          "DOS_SLOWHTTPTEST",
+          "DOS_SLOWLORIS",
+          "FTP_PATATOR",
+          "HEARTBLEED",
+          "INFILTRATION",
+          "PORTSCAN",
+          "SSH_PATATOR",
+          "WEB_ATTACK_BRUTE_FORCE",
+          "WEB_ATTACK_SQL_INJECTION",
+          "WEB_ATTACK_XSS"
+        ],
+        "classification_report": {
+          "BOT": {
+            "precision": 0.8,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.7272727272727273,
+            "support": 6.0
+          },
+          "DDOS": {
+            "precision": 0.8333333333333334,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8333333333333334,
+            "support": 6.0
+          },
+          "DOS_GOLDENEYE": {
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.9090909090909091,
+            "support": 6.0
+          },
+          "DOS_HULK": {
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.9090909090909091,
+            "support": 12.0
+          },
+          "DOS_SLOWHTTPTEST": {
+            "precision": 0.25,
+            "recall": 0.16666666666666666,
+            "f1-score": 0.2,
+            "support": 6.0
+          },
+          "DOS_SLOWLORIS": {
+            "precision": 0.6666666666666666,
+            "recall": 0.6666666666666666,
+            "f1-score": 0.6666666666666666,
+            "support": 12.0
+          },
+          "FTP_PATATOR": {
+            "precision": 0.75,
+            "recall": 0.25,
+            "f1-score": 0.375,
+            "support": 12.0
+          },
+          "HEARTBLEED": {
+            "precision": 0.8333333333333334,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.8333333333333334,
+            "support": 6.0
+          },
+          "INFILTRATION": {
+            "precision": 0.7142857142857143,
+            "recall": 0.8333333333333334,
+            "f1-score": 0.7692307692307693,
+            "support": 6.0
+          },
+          "PORTSCAN": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 12.0
+          },
+          "SSH_PATATOR": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1-score": 0.5714285714285714,
+            "support": 6.0
+          },
+          "WEB_ATTACK_BRUTE_FORCE": {
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1-score": 0.8,
+            "support": 6.0
+          },
+          "WEB_ATTACK_SQL_INJECTION": {
+            "precision": 0.5294117647058824,
+            "recall": 0.75,
+            "f1-score": 0.6206896551724138,
+            "support": 12.0
+          },
+          "WEB_ATTACK_XSS": {
+            "precision": 0.25,
+            "recall": 0.16666666666666666,
+            "f1-score": 0.2,
+            "support": 12.0
+          },
+          "accuracy": 0.675,
+          "macro avg": {
+            "precision": 0.6924069627851139,
+            "recall": 0.7023809523809524,
+            "f1-score": 0.6725097767585453,
+            "support": 120.0
+          },
+          "weighted avg": {
+            "precision": 0.6944887955182074,
+            "recall": 0.675,
+            "f1-score": 0.6593292052774812,
+            "support": 120.0
+          }
+        },
+        "test_rows": 120
+      },
+      "train_positive_windows": 409,
+      "validation_positive_windows": 132,
+      "test_positive_windows": 120
+    }
+  },
+  "scientific_status": "Synthetic multi-attack pipeline demonstration only; not valid research evidence."
+}

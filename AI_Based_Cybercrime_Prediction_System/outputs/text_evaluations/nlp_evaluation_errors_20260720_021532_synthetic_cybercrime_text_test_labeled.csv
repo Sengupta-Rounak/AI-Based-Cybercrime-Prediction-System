@@ -1,0 +1,15 @@
+﻿record_id,incident_text,actual_attack,predicted_attack,confidence,decision,top3
+TEST-0028,A software patch was installed on finance-laptop-07 and all integrity checks passed. No confirmed data loss was available at the time of reporting.,BENIGN,MALWARE,0.99980864,THREAT_DETECTED,MALWARE | BENIGN | XSS
+TEST-0005,A software patch was installed on reception-desktop-04 and all integrity checks passed.,BENIGN,MALWARE,0.99953164,THREAT_DETECTED,MALWARE | BENIGN | BRUTE_FORCE
+TEST-0004,A software patch was installed on branch-router-11 and all integrity checks passed. No confirmed data loss was available at the time of reporting.,BENIGN,MALWARE,0.99276818,THREAT_DETECTED,MALWARE | BENIGN | ACCOUNT_TAKEOVER
+TEST-0273,Multiple failed authentication events occurred at a rate inconsistent with human activity. Relevant authentication and access logs were preserved.,BRUTE_FORCE,ACCOUNT_TAKEOVER,0.99143955,THREAT_DETECTED,ACCOUNT_TAKEOVER | BRUTE_FORCE | BOTNET
+TEST-0274,Multiple failed authentication events occurred at a rate inconsistent with human activity.,BRUTE_FORCE,ACCOUNT_TAKEOVER,0.98037151,THREAT_DETECTED,ACCOUNT_TAKEOVER | BRUTE_FORCE | BOTNET
+TEST-0279,Multiple failed authentication events occurred at a rate inconsistent with human activity.,BRUTE_FORCE,ACCOUNT_TAKEOVER,0.98037151,THREAT_DETECTED,ACCOUNT_TAKEOVER | BRUTE_FORCE | BOTNET
+TEST-0023,A software patch was installed on cloud-instance-18 and all integrity checks passed.,BENIGN,MALWARE,0.95996582,THREAT_DETECTED,MALWARE | BENIGN | BRUTE_FORCE
+TEST-0294,Multiple failed authentication events occurred at a rate inconsistent with human activity. No confirmed data loss was available at the time of reporting.,BRUTE_FORCE,ACCOUNT_TAKEOVER,0.94105526,THREAT_DETECTED,ACCOUNT_TAKEOVER | BOTNET | BRUTE_FORCE
+TEST-0095,Several accounts showed successful sign-ins following automated credential-stuffing attempts. The source was not previously associated with the user.,ACCOUNT_TAKEOVER,BRUTE_FORCE,0.92967845,THREAT_DETECTED,BRUTE_FORCE | ACCOUNT_TAKEOVER | PORT_SCAN
+TEST-0289,Multiple failed authentication events occurred at a rate inconsistent with human activity. The event was forwarded for analyst review.,BRUTE_FORCE,ACCOUNT_TAKEOVER,0.91716898,THREAT_DETECTED,ACCOUNT_TAKEOVER | BOTNET | BRUTE_FORCE
+TEST-0150,A malicious process attempted to encrypt network shares and display recovery instructions.,RANSOMWARE,MALWARE,0.7258442,THREAT_DETECTED,MALWARE | XSS | ACCOUNT_TAKEOVER
+TEST-0145,A malicious process attempted to encrypt network shares and display recovery instructions.,RANSOMWARE,MALWARE,0.7258442,THREAT_DETECTED,MALWARE | XSS | ACCOUNT_TAKEOVER
+TEST-0131,A malicious process attempted to encrypt network shares and display recovery instructions.,RANSOMWARE,MALWARE,0.7258442,THREAT_DETECTED,MALWARE | XSS | ACCOUNT_TAKEOVER
+TEST-0146,A malicious process attempted to encrypt network shares and display recovery instructions. No confirmed data loss was available at the time of reporting.,RANSOMWARE,XSS,0.57711528,THREAT_DETECTED,XSS | MALWARE | SQL_INJECTION

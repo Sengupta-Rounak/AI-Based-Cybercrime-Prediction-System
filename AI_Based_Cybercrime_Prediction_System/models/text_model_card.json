@@ -1,0 +1,37 @@
+{
+  "name": "Cybercrime Incident Text Classifier",
+  "task": "English cybercrime incident-text multiclass classification",
+  "algorithm": "Multinomial Naive Bayes with unigram and bigram text features",
+  "input": "Natural-language incident description",
+  "outputs": [
+    "attack category",
+    "benign/malicious label",
+    "confidence",
+    "severity",
+    "top textual evidence",
+    "recommended action"
+  ],
+  "classes": [
+    "ACCOUNT_TAKEOVER",
+    "BENIGN",
+    "BOTNET",
+    "BRUTE_FORCE",
+    "DDOS",
+    "IDENTITY_THEFT",
+    "MALWARE",
+    "PHISHING",
+    "PORT_SCAN",
+    "RANSOMWARE",
+    "SQL_INJECTION",
+    "XSS"
+  ],
+  "training_records": 2070,
+  "vocabulary_size": 1510,
+  "source": "Synthetic cybercrime incident-text corpus",
+  "source_is_synthetic": true,
+  "limitations": [
+    "Trained only on synthetic English incident descriptions.",
+    "Not validated on real SOC tickets, police complaints, emails, or production incident reports.",
+    "Predictions support triage and demonstration only; analyst review is required."
+  ]
+}

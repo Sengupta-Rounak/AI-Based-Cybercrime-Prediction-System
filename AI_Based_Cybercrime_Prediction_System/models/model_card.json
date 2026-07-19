@@ -1,0 +1,66 @@
+{
+  "name": "AI Based Cybercrime Prediction System Multi-Attack Forecasting Model",
+  "task": "Multi-horizon attack-onset forecasting and attack-type prediction",
+  "source_is_synthetic": true,
+  "supported_horizons_seconds": [
+    5,
+    10,
+    30
+  ],
+  "supported_attack_types_by_horizon": {
+    "5": [
+      "BOT",
+      "DDOS",
+      "DOS_GOLDENEYE",
+      "DOS_HULK",
+      "DOS_SLOWHTTPTEST",
+      "DOS_SLOWLORIS",
+      "FTP_PATATOR",
+      "HEARTBLEED",
+      "INFILTRATION",
+      "PORTSCAN",
+      "SSH_PATATOR",
+      "WEB_ATTACK_BRUTE_FORCE",
+      "WEB_ATTACK_SQL_INJECTION",
+      "WEB_ATTACK_XSS"
+    ],
+    "10": [
+      "BOT",
+      "DDOS",
+      "DOS_GOLDENEYE",
+      "DOS_HULK",
+      "DOS_SLOWHTTPTEST",
+      "DOS_SLOWLORIS",
+      "FTP_PATATOR",
+      "HEARTBLEED",
+      "INFILTRATION",
+      "PORTSCAN",
+      "SSH_PATATOR",
+      "WEB_ATTACK_BRUTE_FORCE",
+      "WEB_ATTACK_SQL_INJECTION",
+      "WEB_ATTACK_XSS"
+    ],
+    "30": [
+      "BOT",
+      "DDOS",
+      "DOS_GOLDENEYE",
+      "DOS_HULK",
+      "DOS_SLOWHTTPTEST",
+      "DOS_SLOWLORIS",
+      "FTP_PATATOR",
+      "HEARTBLEED",
+      "INFILTRATION",
+      "PORTSCAN",
+      "SSH_PATATOR",
+      "WEB_ATTACK_BRUTE_FORCE",
+      "WEB_ATTACK_SQL_INJECTION",
+      "WEB_ATTACK_XSS"
+    ]
+  },
+  "limitations": [
+    "The bundled demo model is trained on synthetic traffic and cannot be reported as real-world evidence.",
+    "A class is forecastable only when the real data contains repeated labelled onsets across chronological train, validation, and test periods.",
+    "The model forecasts near-term network attack onset, not human criminal intent or offline cybercrime."
+  ],
+  "project": "AI Based Cybercrime Prediction System"
+}

@@ -1,0 +1,31 @@
+{
+  "network_feature_count": 91,
+  "network_horizons": [
+    5,
+    10,
+    30
+  ],
+  "active_text_model": "models/portable_text_classifier.json.gz",
+  "active_text_source_is_synthetic": true,
+  "active_text_validation_status": "synthetic_demonstration",
+  "text_class_count": 12,
+  "network_sha256": "27b6b7ce0f44ecbc074870111bb1d84513ce1b4017239bcbb5eb5a9343580436",
+  "text_sha256": "2c342f16c1a66414b292d3879134e5a3c83b849a44868dd57e0c1ff9ca5fed9a",
+  "phishing_smoke_test": "PHISHING",
+  "benign_smoke_test": "BENIGN",
+  "nlp_evaluation_accuracy_smoke": 1.0,
+  "realworld_module_present": true,
+  "realworld_fixture_records": 120,
+  "realworld_fixture_split_strategy": "chronological_70_15_15",
+  "realworld_fixture_split_sizes": {
+    "train": 84,
+    "validation": 18,
+    "test": 18
+  },
+  "real_model_available": false,
+  "real_incident_multilabel_model_valid": true,
+  "real_incident_phishing_smoke": "SOCIAL_ENGINEERING",
+  "real_incident_model_sha256": "71f3ac0ff3ed73c0200ac41070addf3f76c080bbb343e6866e4b3c0ead6f0911",
+  "focused_reports_present": true,
+  "valid": true
+}

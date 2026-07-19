@@ -1,0 +1,655 @@
+{
+  "records": 360,
+  "correct": 346,
+  "accuracy": 0.96111111,
+  "balanced_accuracy": 0.96111111,
+  "macro_precision": 0.96608603,
+  "macro_recall": 0.96111111,
+  "macro_f1": 0.96128158,
+  "weighted_precision": 0.96608603,
+  "weighted_recall": 0.96111111,
+  "weighted_f1": 0.96128158,
+  "micro_precision": 0.96111111,
+  "micro_recall": 0.96111111,
+  "micro_f1": 0.96111111,
+  "cohen_kappa": 0.95757576,
+  "top3_accuracy": 0.98888889,
+  "log_loss": 0.24120371,
+  "multiclass_brier": 0.00591467,
+  "expected_calibration_error": 0.03430184,
+  "review_count": 0,
+  "review_rate": 0.0,
+  "coverage": 1.0,
+  "selective_accuracy": 0.96111111,
+  "average_confidence": 0.99338827,
+  "average_correct_confidence": 0.99760974,
+  "average_error_confidence": 0.88905767,
+  "labels": [
+    "ACCOUNT_TAKEOVER",
+    "BENIGN",
+    "BOTNET",
+    "BRUTE_FORCE",
+    "DDOS",
+    "IDENTITY_THEFT",
+    "MALWARE",
+    "PHISHING",
+    "PORT_SCAN",
+    "RANSOMWARE",
+    "SQL_INJECTION",
+    "XSS"
+  ],
+  "per_class": [
+    {
+      "label": "ACCOUNT_TAKEOVER",
+      "precision": 0.85294118,
+      "recall": 0.96666667,
+      "f1": 0.90625,
+      "support": 30,
+      "predicted_count": 34,
+      "true_positive": 29,
+      "false_positive": 5,
+      "false_negative": 1,
+      "supported_by_model": true
+    },
+    {
+      "label": "BENIGN",
+      "precision": 1.0,
+      "recall": 0.86666667,
+      "f1": 0.92857143,
+      "support": 30,
+      "predicted_count": 26,
+      "true_positive": 26,
+      "false_positive": 0,
+      "false_negative": 4,
+      "supported_by_model": true
+    },
+    {
+      "label": "BOTNET",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 30,
+      "predicted_count": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "BRUTE_FORCE",
+      "precision": 0.96153846,
+      "recall": 0.83333333,
+      "f1": 0.89285714,
+      "support": 30,
+      "predicted_count": 26,
+      "true_positive": 25,
+      "false_positive": 1,
+      "false_negative": 5,
+      "supported_by_model": true
+    },
+    {
+      "label": "DDOS",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 30,
+      "predicted_count": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "IDENTITY_THEFT",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 30,
+      "predicted_count": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "MALWARE",
+      "precision": 0.81081081,
+      "recall": 1.0,
+      "f1": 0.89552239,
+      "support": 30,
+      "predicted_count": 37,
+      "true_positive": 30,
+      "false_positive": 7,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "PHISHING",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 30,
+      "predicted_count": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "PORT_SCAN",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 30,
+      "predicted_count": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "RANSOMWARE",
+      "precision": 1.0,
+      "recall": 0.86666667,
+      "f1": 0.92857143,
+      "support": 30,
+      "predicted_count": 26,
+      "true_positive": 26,
+      "false_positive": 0,
+      "false_negative": 4,
+      "supported_by_model": true
+    },
+    {
+      "label": "SQL_INJECTION",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 30,
+      "predicted_count": 30,
+      "true_positive": 30,
+      "false_positive": 0,
+      "false_negative": 0,
+      "supported_by_model": true
+    },
+    {
+      "label": "XSS",
+      "precision": 0.96774194,
+      "recall": 1.0,
+      "f1": 0.98360656,
+      "support": 30,
+      "predicted_count": 31,
+      "true_positive": 30,
+      "false_positive": 1,
+      "false_negative": 0,
+      "supported_by_model": true
+    }
+  ],
+  "confusion_matrix": [
+    [
+      29,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      26,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0,
+      25,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      26,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      30
+    ]
+  ],
+  "calibration_bins": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "count": 1,
+      "average_confidence": 0.57711528,
+      "accuracy": 0.0,
+      "gap": 0.57711528
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "count": 0,
+      "average_confidence": 0.0,
+      "accuracy": 0.0,
+      "gap": 0.0
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "count": 3,
+      "average_confidence": 0.7258442,
+      "accuracy": 0.0,
+      "gap": 0.7258442
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 2,
+      "average_confidence": 0.81777911,
+      "accuracy": 1.0,
+      "gap": 0.18222089
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 354,
+      "average_confidence": 0.99782365,
+      "accuracy": 0.97175141,
+      "gap": 0.02607224
+    }
+  ],
+  "errors": [
+    {
+      "record_id": "TEST-0028",
+      "incident_text": "A software patch was installed on finance-laptop-07 and all integrity checks passed. No confirmed data loss was available at the time of reporting.",
+      "actual_attack": "BENIGN",
+      "predicted_attack": "MALWARE",
+      "confidence": 0.99980864,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "MALWARE",
+        "BENIGN",
+        "XSS"
+      ]
+    },
+    {
+      "record_id": "TEST-0005",
+      "incident_text": "A software patch was installed on reception-desktop-04 and all integrity checks passed.",
+      "actual_attack": "BENIGN",
+      "predicted_attack": "MALWARE",
+      "confidence": 0.99953164,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "MALWARE",
+        "BENIGN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "TEST-0004",
+      "incident_text": "A software patch was installed on branch-router-11 and all integrity checks passed. No confirmed data loss was available at the time of reporting.",
+      "actual_attack": "BENIGN",
+      "predicted_attack": "MALWARE",
+      "confidence": 0.99276818,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "MALWARE",
+        "BENIGN",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "TEST-0273",
+      "incident_text": "Multiple failed authentication events occurred at a rate inconsistent with human activity. Relevant authentication and access logs were preserved.",
+      "actual_attack": "BRUTE_FORCE",
+      "predicted_attack": "ACCOUNT_TAKEOVER",
+      "confidence": 0.99143955,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "ACCOUNT_TAKEOVER",
+        "BRUTE_FORCE",
+        "BOTNET"
+      ]
+    },
+    {
+      "record_id": "TEST-0274",
+      "incident_text": "Multiple failed authentication events occurred at a rate inconsistent with human activity.",
+      "actual_attack": "BRUTE_FORCE",
+      "predicted_attack": "ACCOUNT_TAKEOVER",
+      "confidence": 0.98037151,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "ACCOUNT_TAKEOVER",
+        "BRUTE_FORCE",
+        "BOTNET"
+      ]
+    },
+    {
+      "record_id": "TEST-0279",
+      "incident_text": "Multiple failed authentication events occurred at a rate inconsistent with human activity.",
+      "actual_attack": "BRUTE_FORCE",
+      "predicted_attack": "ACCOUNT_TAKEOVER",
+      "confidence": 0.98037151,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "ACCOUNT_TAKEOVER",
+        "BRUTE_FORCE",
+        "BOTNET"
+      ]
+    },
+    {
+      "record_id": "TEST-0023",
+      "incident_text": "A software patch was installed on cloud-instance-18 and all integrity checks passed.",
+      "actual_attack": "BENIGN",
+      "predicted_attack": "MALWARE",
+      "confidence": 0.95996582,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "MALWARE",
+        "BENIGN",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "TEST-0294",
+      "incident_text": "Multiple failed authentication events occurred at a rate inconsistent with human activity. No confirmed data loss was available at the time of reporting.",
+      "actual_attack": "BRUTE_FORCE",
+      "predicted_attack": "ACCOUNT_TAKEOVER",
+      "confidence": 0.94105526,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "ACCOUNT_TAKEOVER",
+        "BOTNET",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "TEST-0095",
+      "incident_text": "Several accounts showed successful sign-ins following automated credential-stuffing attempts. The source was not previously associated with the user.",
+      "actual_attack": "ACCOUNT_TAKEOVER",
+      "predicted_attack": "BRUTE_FORCE",
+      "confidence": 0.92967845,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "BRUTE_FORCE",
+        "ACCOUNT_TAKEOVER",
+        "PORT_SCAN"
+      ]
+    },
+    {
+      "record_id": "TEST-0289",
+      "incident_text": "Multiple failed authentication events occurred at a rate inconsistent with human activity. The event was forwarded for analyst review.",
+      "actual_attack": "BRUTE_FORCE",
+      "predicted_attack": "ACCOUNT_TAKEOVER",
+      "confidence": 0.91716898,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "ACCOUNT_TAKEOVER",
+        "BOTNET",
+        "BRUTE_FORCE"
+      ]
+    },
+    {
+      "record_id": "TEST-0150",
+      "incident_text": "A malicious process attempted to encrypt network shares and display recovery instructions.",
+      "actual_attack": "RANSOMWARE",
+      "predicted_attack": "MALWARE",
+      "confidence": 0.7258442,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "MALWARE",
+        "XSS",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "TEST-0145",
+      "incident_text": "A malicious process attempted to encrypt network shares and display recovery instructions.",
+      "actual_attack": "RANSOMWARE",
+      "predicted_attack": "MALWARE",
+      "confidence": 0.7258442,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "MALWARE",
+        "XSS",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "TEST-0131",
+      "incident_text": "A malicious process attempted to encrypt network shares and display recovery instructions.",
+      "actual_attack": "RANSOMWARE",
+      "predicted_attack": "MALWARE",
+      "confidence": 0.7258442,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "MALWARE",
+        "XSS",
+        "ACCOUNT_TAKEOVER"
+      ]
+    },
+    {
+      "record_id": "TEST-0146",
+      "incident_text": "A malicious process attempted to encrypt network shares and display recovery instructions. No confirmed data loss was available at the time of reporting.",
+      "actual_attack": "RANSOMWARE",
+      "predicted_attack": "XSS",
+      "confidence": 0.57711528,
+      "decision": "THREAT_DETECTED",
+      "top3": [
+        "XSS",
+        "MALWARE",
+        "SQL_INJECTION"
+      ]
+    }
+  ],
+  "error_count": 14,
+  "high_confidence_error_count": 10,
+  "binary": {
+    "records": 360,
+    "accuracy": 0.98888889,
+    "precision": 0.98802395,
+    "recall": 1.0,
+    "specificity": 0.86666667,
+    "f1": 0.9939759,
+    "roc_auc": 0.99767677,
+    "pr_auc": 0.99978796,
+    "confusion": {
+      "tp": 330,
+      "tn": 26,
+      "fp": 4,
+      "fn": 0
+    }
+  },
+  "dataset": {
+    "filename": "synthetic_cybercrime_text_test_labeled.csv",
+    "answer_key_filename": "synthetic_cybercrime_text_test_answer_key.csv",
+    "text_column": "incident_text",
+    "label_column": "attack_type",
+    "id_column": "record_id",
+    "total_evaluated": 360,
+    "skipped_missing_label": 0,
+    "skipped_invalid_text": 0,
+    "unmatched_answer_key_records": 0,
+    "unknown_label_counts": {},
+    "source_is_synthetic": true
+  },
+  "scientific_note": "Evaluation metrics describe only the supplied labelled dataset. Synthetic results are not evidence of real-world performance."
+}

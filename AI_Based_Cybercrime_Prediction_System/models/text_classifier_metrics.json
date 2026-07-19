@@ -1,0 +1,521 @@
+{
+  "model_name": "Cybercrime Incident Text Classifier",
+  "algorithm": "Multinomial Naive Bayes with unigram and bigram text features",
+  "source_is_synthetic": true,
+  "training_records": 2070,
+  "vocabulary_size": 1510,
+  "classes": [
+    "ACCOUNT_TAKEOVER",
+    "BENIGN",
+    "BOTNET",
+    "BRUTE_FORCE",
+    "DDOS",
+    "IDENTITY_THEFT",
+    "MALWARE",
+    "PHISHING",
+    "PORT_SCAN",
+    "RANSOMWARE",
+    "SQL_INJECTION",
+    "XSS"
+  ],
+  "internal_synthetic_test": {
+    "records": 330,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_class": {
+      "ACCOUNT_TAKEOVER": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 34
+      },
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 29
+      },
+      "BOTNET": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 24
+      },
+      "BRUTE_FORCE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 27
+      },
+      "DDOS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 29
+      },
+      "IDENTITY_THEFT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 27
+      },
+      "MALWARE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30
+      },
+      "PHISHING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 26
+      },
+      "PORT_SCAN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 26
+      },
+      "RANSOMWARE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 27
+      },
+      "SQL_INJECTION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 28
+      },
+      "XSS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 23
+      }
+    },
+    "confusion_matrix": {
+      "ACCOUNT_TAKEOVER": {
+        "ACCOUNT_TAKEOVER": 34,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "BENIGN": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 29,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "BOTNET": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 24,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "BRUTE_FORCE": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 27,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "DDOS": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 29,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "IDENTITY_THEFT": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 27,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "MALWARE": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 30,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "PHISHING": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 26,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "PORT_SCAN": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 26,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "RANSOMWARE": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 27,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "SQL_INJECTION": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 28,
+        "XSS": 0
+      },
+      "XSS": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 23
+      }
+    }
+  },
+  "independent_synthetic_test": {
+    "records": 360,
+    "accuracy": 0.9638888888888889,
+    "macro_f1": 0.9640366362289533,
+    "per_class": {
+      "ACCOUNT_TAKEOVER": {
+        "precision": 0.8571428571428571,
+        "recall": 1.0,
+        "f1": 0.923076923076923,
+        "support": 30
+      },
+      "BENIGN": {
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1": 0.9285714285714286,
+        "support": 30
+      },
+      "BOTNET": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30
+      },
+      "BRUTE_FORCE": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "support": 30
+      },
+      "DDOS": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30
+      },
+      "IDENTITY_THEFT": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30
+      },
+      "MALWARE": {
+        "precision": 0.8108108108108109,
+        "recall": 1.0,
+        "f1": 0.8955223880597014,
+        "support": 30
+      },
+      "PHISHING": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30
+      },
+      "PORT_SCAN": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30
+      },
+      "RANSOMWARE": {
+        "precision": 1.0,
+        "recall": 0.8666666666666667,
+        "f1": 0.9285714285714286,
+        "support": 30
+      },
+      "SQL_INJECTION": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 30
+      },
+      "XSS": {
+        "precision": 0.967741935483871,
+        "recall": 1.0,
+        "f1": 0.9836065573770492,
+        "support": 30
+      }
+    },
+    "confusion_matrix": {
+      "ACCOUNT_TAKEOVER": {
+        "ACCOUNT_TAKEOVER": 30,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "BENIGN": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 26,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 4,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "BOTNET": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 30,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "BRUTE_FORCE": {
+        "ACCOUNT_TAKEOVER": 5,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 25,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "DDOS": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 30,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "IDENTITY_THEFT": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 30,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "MALWARE": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 30,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "PHISHING": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 30,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "PORT_SCAN": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 30,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 0
+      },
+      "RANSOMWARE": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 3,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 26,
+        "SQL_INJECTION": 0,
+        "XSS": 1
+      },
+      "SQL_INJECTION": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 30,
+        "XSS": 0
+      },
+      "XSS": {
+        "ACCOUNT_TAKEOVER": 0,
+        "BENIGN": 0,
+        "BOTNET": 0,
+        "BRUTE_FORCE": 0,
+        "DDOS": 0,
+        "IDENTITY_THEFT": 0,
+        "MALWARE": 0,
+        "PHISHING": 0,
+        "PORT_SCAN": 0,
+        "RANSOMWARE": 0,
+        "SQL_INJECTION": 0,
+        "XSS": 30
+      }
+    }
+  },
+  "model_sha256": "2c342f16c1a66414b292d3879134e5a3c83b849a44868dd57e0c1ff9ca5fed9a",
+  "scientific_status": "Synthetic demonstration only; not real-world validation."
+}
